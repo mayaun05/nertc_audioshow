@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta property="og:title" content="Unsupervised human-to-robot motion retargeting via expressive latent space"/>
+  <meta property="og:url" content="https://evm7.github.io/UnsH2R/"/>
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <title>Unsupervised human-to-robot motion retargeting via expressive latent space</title>
+  
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+  <link rel="icon" href="static/figures/icon2.png">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+
+<body>
+
+  
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://evm7.github.io">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://evm7.github.io/HOI4ABOT_page/">
+            HOI4ABOT
+          </a>
+           <a class="navbar-item" href="https://evm7.github.io/UNIMASKM-page/">
+            UNIMASK-M
+          </a>
+          <a class="navbar-item" href="https://evm7.github.io/icvae-page/">
+            IntentionCVAE
+          </a>
+          <a class="navbar-item" href="https://evm7.github.io/HOIGaze-page/">
+            HOIGaze
+          </a>
+            <a class="navbar-item" href="https://evm7.github.io/2CHTR-page/">
+            2CHTR
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+<section class="publication-header">
+  <div class="hero-body">
+    <div class="container is-max-widescreen">
+      <!-- <div class="columns is-centered"> -->
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Unsupervised human-to-robot motion retargeting via expressive latent space</h1>
+          <div class="is-size-3 publication-authors">
+            Humanoids, 2023
+          </div>
+        </div>
+    </div>
+  </div>
+
+</section>
+
+<section class="publication-author-block">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><a href="https://www.tuwien.at/en/etit/ict/asl/team/yashuai-yan" target="_blank">Yashuai Yan*</a>,</span>
+           <span class="author-block"><a href="https://evm7.github.io/" target="_blank">Esteve Valls Mascaro*</a>,</span>
+            <span class="author-block"><a href="https://www.tuwien.at/etit/ict/asl/team/dongheui-lee" target="_blank">Dongheui Lee</a>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Technische Universit ̈at Wien (TUWien), German Aerospace Center (DLR)</span> 
+            <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+          </div>
+          
+
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2309.05310" target="_blank"
+                  class="external-link button is-normal is-rounded">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+
+              
+              <!-- PDF Link. -->
+<!--              <span class="link-block">-->
+<!--                <a href="static/source/ADDHEREPDF.pdf" target="_blank"-->
+<!--                  class="external-link button is-normal is-rounded">-->
+<!--                  <span class="icon">-->
+<!--                    <i class="fas fa-file-pdf"></i>-->
+<!--                  </span>-->
+<!--                  <span>Paper</span>-->
+<!--                </a>-->
+<!--              </span>-->
+<!--                            </span>-->
+              <!-- </span> -->
+              <!-- Colab Link. -->
+<!--              <span class="link-block">-->
+<!--                <a href="ADD HERE THE CODE" target="_blank"-->
+<!--                class="external-link button is-normal is-rounded">-->
+<!--                <span class="icon">-->
+<!--                  <i class="fab fa-github"></i>-->
+<!--                </span>-->
+<!--                <span>Code</span>-->
+<!--              </a>-->
+<!--             </span>-->
+
+<!--              <span class="link-block">-->
+<!--                <a href="ADD HERE REPLICATE IF NEEDED" target="_blank"-->
+<!--                class="external-link button is-normal is-rounded">-->
+<!--                <span class="icon">-->
+<!--                  <i class="fas fa-rocket"></i>-->
+<!--                </span>-->
+<!--                <span>Demo</span>-->
+<!--              </a>-->
+<!--              </span>-->
+              <!-- </span> -->
+              <!-- Colab Link. -->
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 
+<section class="hero is-small">
+  <!~~ <div class="hero-body"> ~~>
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <!~~ <div id="results-carousel" class="carousel results-carousel"> ~~>
+      <div class="container">
+      <div class="item">
+      <div class="column is-centered has-text-centered">
+        <img src="static/figures/teaser.png" alt="UNIMASKM"/>
+      </div>
+
+    </div>
+  </div>
+ <!~~  </div> ~~>
+  </div>
+  </div>
+ <!~~  </div> ~~>
+</section>
+ -->
+
+  <section class="hero is-small">
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div class="container">
+        <div class="item">
+          <p style="margin-bottom: 30px">
+ 
+        <video poster="" id="tree" autoplay controls muted loop height="100%">
+          <source src="static/figures/welcome.mp4"
+          type="video/mp4">
+        </video>
+        </p>
+        </div>
+    </div>
+  </div>
+  </div>
+  </div>
+</section>
+    
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            This paper introduces a novel deep-learning approach for human-to-robot motion retargeting, enabling robots to accurately mimic human poses while preserving their semantics. Contrary to prior works, we do not require paired human-to-robot data, which facilitates its translation to new robots. First, we construct a shared latent space via adaptive contrastive learning that takes advantage of a proposed cross-domain similarity metric between the human and robot poses.  We additionally propose a consistency term to build an expressive latent space that captures the semantics of the poses with precision, while allowing a direct robot motion control from the latent space. For instance, we can generate in-between motion through simple linear interpolation between two projected human poses. Additionally, we conduct a comprehensive evaluation of robot control from diverse modalities (i.e texts, RGB videos, and key-poses), which facilitates robot control for non-expert users. Our model outperforms existing works in terms of human-to-robot retargeting in terms of efficiency and precision. Finally, we implemented our method in a real robot with self-collision avoidance through a whole-body controller to showcase the effectiveness of our approach.
+</p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+
+      <div class="column is-centered has-text-centered">
+        <img src="static/figures/overview.jpg" alt="Motivation of our model"/>
+      </div>    
+  </div>
+</div>
+</div>
+</section>
+
+
+
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+         <h2 class="title is-3">How does it work?</h2> 
+        <div class="content has-text-justified">
+          <p>
+Our human-to-robot motion retargeting connects robot control with diverse source modalities, such as a text description or an RGB video. We project human skeletons to an expressive latent space that preserves the semantics of the poses while permitting pose control in the latent space. We are able to retarget human poses to robot key-poses (green and blue dots) and empower the generation of smooth transitions between those key-poses through the interpolation in the latent space (orange dots), which ensures smooth and natural motion generation.
+</p>
+        <div class="columns is-centered has-text-centered">
+            <div class="item">
+          <p style="margin-bottom: 30px">
+<!--
+        <video poster="" id="tree" autoplay controls muted loop height="100%">
+          <source src="static/figures/MDM-page.mp4"
+          type="video/mp4">
+        </video>
+ --><br><br>
+        </p>
+        </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+    
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+
+      <div class="column is-centered has-text-centered">
+        <img src="static/figures/modeloverview.jpg" alt="Architecture of our UNIMASK-M"/>
+      </div>    
+  </div>
+</div>
+</div>
+</section>
+
+  
+<section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>
+@article{yan2023unsupervised,
+  title={Unsupervised human-to-robot motion retargeting via expressive latent space},
+  author={Yan, Yashuai and Mascaro, Esteve Valls and Lee, Dongheui},
+  journal={arXiv preprint arXiv:2309.05310},
+  year={2023}
+}</code></pre>
+    </div>
+</section>
+
+
+
+
+<footer class="footer">
+ <!--  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+      href="https://homes.cs.washington.edu/~kpar/nerfies/videos/nerfies_paper.pdf">
+      <i class="fas fa-file-pdf"></i>
+    </a>
+    <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+      <i class="fab fa-github"></i>
+    </a>
+  </div> -->
+  <div class="columns is-centered">
+    <div class="column is-8">
+      <div class="content">
+        <p>
+          This website is licensed under a <a rel="license"
+          href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+        Commons Attribution-ShareAlike 4.0 International License</a>.
+      </p>
+      <p>
+        Website source code based on the <a href="https://nerfies.github.io/"> Nerfies</a> project page. If you want to reuse their <a
+        href="https://github.com/nerfies/nerfies.github.io">source code</a>, please credit them appropriately.
+      </p>
+    </div>
+  </div>
+</div>
+</div>
+</footer>
+
+  </body>
+  </html>
