@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8">
   
-  <meta property="og:title" content="Unsupervised human-to-robot motion retargeting via expressive latent space"/>
+  <meta property="og:title" content="ImitationNet: Unsupervised human-to-robot motion retargeting via shared latent space"/>
   <meta property="og:url" content="https://evm7.github.io/UnsH2R/"/>
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
 
 
-  <title>Unsupervised human-to-robot motion retargeting via expressive latent space</title>
+  <title>ImitationNet: Unsupervised human-to-robot motion retargeting via shared latent space</title>
   
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -82,7 +82,7 @@
     <div class="container is-max-widescreen">
       <!-- <div class="columns is-centered"> -->
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Unsupervised human-to-robot motion retargeting via expressive latent space</h1>
+          <h1 class="title is-1 publication-title">ImitationNet: Unsupervised human-to-robot motion retargeting via shared latent space</h1>
           <div class="is-size-3 publication-authors">
             Humanoids, 2023
           </div>
@@ -217,8 +217,8 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            This paper introduces a novel deep-learning approach for human-to-robot motion retargeting, enabling robots to accurately mimic human poses while preserving their semantics. Contrary to prior works, we do not require paired human-to-robot data, which facilitates its translation to new robots. First, we construct a shared latent space via adaptive contrastive learning that takes advantage of a proposed cross-domain similarity metric between the human and robot poses.  We additionally propose a consistency term to build an expressive latent space that captures the semantics of the poses with precision, while allowing a direct robot motion control from the latent space. For instance, we can generate in-between motion through simple linear interpolation between two projected human poses. Additionally, we conduct a comprehensive evaluation of robot control from diverse modalities (i.e texts, RGB videos, and key-poses), which facilitates robot control for non-expert users. Our model outperforms existing works in terms of human-to-robot retargeting in terms of efficiency and precision. Finally, we implemented our method in a real robot with self-collision avoidance through a whole-body controller to showcase the effectiveness of our approach.
-</p>
+          This paper introduces a novel deep-learning approach for human-to-robot motion retargeting, enabling robots to mimic human poses accurately. Contrary to prior deep-learning-based works, our method does not require paired human-to-robot data, which facilitates its translation to new robots. First, we construct a shared latent space between humans and robots via adaptive contrastive learning that takes advantage of a proposed cross-domain similarity metric between the human and robot poses.  Additionally, we propose a consistency term to build a common latent space that captures the similarity of the poses with precision while allowing direct robot motion control from the latent space. For instance, we can generate in-between motion through simple linear interpolation between two projected human poses. We conduct a comprehensive evaluation of robot control from diverse modalities (i.e., texts, RGB videos, and key poses), which facilitates robot control for non-expert users. Our model outperforms existing works regarding human-to-robot retargeting in terms of efficiency and precision. Finally, we implemented our method in a real robot with self-collision avoidance through a whole-body controller to showcase the effectiveness of our approach.
+          </p>
         </div>
       </div>
     </div>
@@ -249,8 +249,8 @@
          <h2 class="title is-3">How does it work?</h2> 
         <div class="content has-text-justified">
           <p>
-Our human-to-robot motion retargeting connects robot control with diverse source modalities, such as a text description or an RGB video. We project human skeletons to an expressive latent space that preserves the semantics of the poses while permitting pose control in the latent space. We are able to retarget human poses to robot key-poses (green and blue dots) and empower the generation of smooth transitions between those key-poses through the interpolation in the latent space (orange dots), which ensures smooth and natural motion generation.
-</p>
+Our human-to-robot motion retargeting connects robot control with diverse source modalities, such as a text description, an RGB video, or key poses. Our approach can encode human skeletons into a shared latent space between humans and robots, and subsequently decode these latent variables into the robot’s joint space, enabling direct robot control. Additionally, our approach facilitates the generation of smooth robot motions between human key poses (represented as green and blue dots) through interpolation within the latent space (indicated by the orange dots).
+          </p>
         <div class="columns is-centered has-text-centered">
             <div class="item">
           <p style="margin-bottom: 30px">
@@ -289,7 +289,7 @@ Our human-to-robot motion retargeting connects robot control with diverse source
       <h2 class="title">BibTeX</h2>
       <pre><code>
 @article{yan2023unsupervised,
-  title={Unsupervised human-to-robot motion retargeting via expressive latent space},
+  title={ImitationNet: Unsupervised human-to-robot motion retargeting via shared latent space},
   author={Yan, Yashuai and Mascaro, Esteve Valls and Lee, Dongheui},
   journal={arXiv preprint arXiv:2309.05310},
   year={2023}
