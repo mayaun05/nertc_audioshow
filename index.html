@@ -276,14 +276,71 @@ Our human-to-robot motion retargeting connects robot control with diverse source
     <div class="container">
 
       <div class="column is-centered has-text-centered">
-        <img src="static/figures/modeloverview.jpg" alt="Architecture of our UNIMASK-M"/>
+        <img src="static/figures/modeloverview.jpg" alt="Architecture of our ImitationNet"/>
       </div>    
   </div>
 </div>
 </div>
 </section>
 
-  
+
+      <section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Human Motion Retargeting From Videos</h2>
+          <p>
+
+            We estimate the human pose from RGB images using an off-the-shelf pose estimator and we feed our ImitationNet model with the predicted human pose. Our model can control the real TiaGo robot in real-time thanks to its light-weight design with a high-accuracy in the retargeting.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section> 
+
+    
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <div id="results-carousel" class="carousel results-carousel">
+          
+      <div class="column is-centered has-text-centered">
+        <p><b> “A human and TiaGo are moving among obstacles”</b></p>
+                <video poster="" id="tree" autoplay controls muted loop height="100%">
+                  <source src="static/figures/videos/s0_moving.mp4" type="video/mp4">
+                </video>
+      </div>
+      <div class="column is-centered has-text-centered">
+        <p><b> “A human and TiaGo are moving among obstacles”</b></p>
+                <video poster="" id="tree" autoplay controls muted loop height="100%">
+                  <source src="static/figures/videos/s0_moving2.mp4" type="video/mp4">
+                </video>
+      </div>
+      <div class="column is-centered has-text-centered">
+        <p><b> “A human and TiaGo are moving among obstacles”</b></p>
+                <video poster="" id="tree" autoplay controls muted loop height="100%">
+                  <source src="static/figures/videos/s2_moving.mp4" type="video/mp4">
+                </video>
+      </div>
+      <div class="column is-centered has-text-centered">
+        <p><b> “A human and TiaGo are encountering in their trajectory, they stop and say hi to each other.”</b></p>
+                <video poster="" id="tree" autoplay controls muted loop height="100%">
+                  <source src="static/figures/videos/crossing_s1.mp4" type="video/mp4">
+                </video>
+      </div>
+        <div class="column is-centered has-text-centered">
+        <p><b> “A human is performing random movements, which TiaGo imitates..”</b></p>
+                <video poster="" id="tree" autoplay controls muted loop height="100%">
+                  <source src="static/figures/videos/random.mp4" type="video/mp4">
+                </video>
+      </div>
+          </div>
+      </div>
+    </div>
+  </section>
 <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
